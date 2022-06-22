@@ -5,7 +5,7 @@ const List = ({ items, removeItem, editItem }) => {
   return (
     <div className="container">
       {items.map((item) => {
-        const { id, title } = item;
+        const {id,title} = item;
         return (
           <ul className="list-group list-group-flush" key={id}>
             <li className="list-group-item d-flex justify-content-between align-items-center">
@@ -30,7 +30,7 @@ const List = ({ items, removeItem, editItem }) => {
               </div>
             </li>
           </ul>
-        );
+        )
       })}
     </div>
   );
