@@ -10,6 +10,16 @@ const List = ({ items, removeItem, editItem }) => {
           <ul className="list-group list-group-flush" key={id}>
             <li className="list-group-item d-flex justify-content-between align-items-center">
               {title}
+              <div className="col">
+              <div style={{ float: "right" }}>
+                <button
+                  type="button"
+                  className="delete-btn"
+                  onClick={() => removeItem(id)}
+                >
+                  <FaTrash />
+                </button>
+              </div>
               <div style={{ float: "right" }}>
                 <button
                   type="button"
@@ -19,14 +29,6 @@ const List = ({ items, removeItem, editItem }) => {
                   <FaEdit />
                 </button>
               </div>
-              <div style={{ float: "right" }}>
-                <button
-                  type="button"
-                  className="delete-btn"
-                  onClick={() => removeItem(id)}
-                >
-                  <FaTrash />
-                </button>
               </div>
             </li>
           </ul>

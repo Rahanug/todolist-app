@@ -79,7 +79,7 @@ const App = () => {
             onChange={(e) => setName(e.target.value)}
             value={name}
           />
-          <button type="submit" className="btn btn-success">
+          <button type="submit" className="btn btn-primary" style={{backgroundColor: "#3378FF"}}>
             {isEditing ? "Edit" : "Submit"}
           </button>
         </div>
@@ -88,7 +88,7 @@ const App = () => {
         <div style={{ marginTop: "2rem" }}>
           <List items={list} removeItem={removeItem} editItem={editItem} />
           <div className="text-center">
-            <button className="btn btn-warming" onClick={clearList}>
+            <button className="btn btn-warning" onClick={clearList}>
               Clear Items
             </button>
           </div>

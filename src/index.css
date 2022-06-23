@@ -5,7 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: hsl(210, 36%, 96%);
+  background: linear-gradient(
+    90deg,
+    rgb(10, 190, 248) 0%,
+    rgb(181, 240, 240) 100%
+  );
   color: hsl(209, 61%, 16%);
 }
 
@@ -49,9 +53,9 @@ code {
 }
 
 .edit-btn{
-  color: lightgreen;
+  color: lightblue;
 }
 
 .delete-btn{
-  color: red;
+  color: lightcoral;
 }
