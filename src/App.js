@@ -75,7 +75,7 @@ const App = () => {
           <input
             type="text"
             className="form-control"
-            placeholder="e.g Bread"
+            placeholder="ex: activity 1"
             onChange={(e) => setName(e.target.value)}
             value={name}
           />
@@ -88,7 +88,7 @@ const App = () => {
         <div style={{ marginTop: "2rem" }}>
           <List items={list} removeItem={removeItem} editItem={editItem} />
           <div className="text-center">
-            <button className="btn btn-warning" onClick={clearList}>
+            <button className="btn btn-danger" onClick={clearList}>
               Clear Items
             </button>
           </div>
