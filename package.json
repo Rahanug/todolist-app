@@ -2,7 +2,7 @@
   "name": "todolist-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rahanug.github.io/todolist-app/",
+  "homepage": "https://rahanug.github.io/todolist-app",
   "dependencies": {
     "-": "0.0.1",
     "@testing-library/jest-dom": "^5.16.4",
